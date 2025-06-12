@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav id="sidebar-nav" class="fixed top-[70px] right-0 w-15 z-50 flex flex-col items-center justify-center
+    mr-[16px] sm:mr-[32px] md:mr-[64px] lg:mr-[128px] space-y-0 mb-0
+    hidden xl:flex">
+        <div data-section="home" class="cursor-pointer bord nav_item rounded-full w-[48px] h-[48px] md:w-[70px] md:h-[70px] flex items-center justify-center">
+            <p class="text-xs md:text-sm font-bold">Home</p>
+        </div>
+        <div class="h-[40px] md:h-[100px] w-[2px] bg-white my-[6px] md:my-[10px]"></div>
+        <div data-section="about" class="cursor-pointer bord nav_item rounded-full w-[48px] h-[48px] md:w-[70px] md:h-[70px] flex items-center justify-center">
+            <p class="text-xs md:text-sm font-bold">About</p>
+        </div>
+        <div class="h-[40px] md:h-[100px] w-[2px] bg-white my-[6px] md:my-[10px]"></div>
+        <div data-section="skills" class="cursor-pointer bord nav_item rounded-full w-[48px] h-[48px] md:w-[70px] md:h-[70px] flex items-center justify-center">
+            <p class="text-xs md:text-sm font-bold">Skills</p>
+        </div>
+        <div class="h-[40px] md:h-[100px] w-[2px] bg-white my-[6px] md:my-[10px]"></div>
+        <div data-section="projects" class="cursor-pointer bord nav_item rounded-full w-[48px] h-[48px] md:w-[70px] md:h-[70px] flex items-center justify-center">
+            <p class="text-[10px] md:text-[11px] font-bold">Projects</p>
+        </div>
+        <div class="h-[40px] md:h-[100px] w-[2px] bg-white my-[6px] md:my-[10px]"></div>
+        <div data-section="exp" class="cursor-pointer bord nav_item rounded-full w-[48px] h-[48px] md:w-[70px] md:h-[70px] flex items-center justify-center">
+            <p class="text-[10px] md:text-[11px] font-bold">Expierence</p>
+        </div>
+    </nav>
+    <!-- <div id="home" class="section  px-[128px] w-screen h-screen flex">
+        <div class="mt-[140px] flex">
+
+            <div class="flex flex-col">
+                <h1 class="text-white text-[64px]">Yousif Sami</h1>
+                <h1 class="text-red text-[40px]">Full-Stack Web Developer | Product Analyst </h1>
+                <p class="text-gray text-[32px]/[32px] mt-[109px] w-140">Hey there! Thanks for stopping by.
+                    Take a look around and
+                    discover what I love to build and analyze.
+                </p>
+                <button class="red-button mt-[185px] w-[290px] h-[100px] text-[32px]" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">
+                    Show Me
+                </button>
+            </div>
+            <div >
+                <img class="w-[700px]" src="./img/me.png" alt="">
+            </div>
+        </div>
+    </div> -->
+     <div id="home" class="section fade-in-section px-4 sm:px-8 md:px-16 lg:pl-[128px] lg:pr-[256px] w-screen min-h-screen flex items-center">
+        <div class="flex flex-col lg:flex-row items-center w-full space-y-8 lg:space-y-0">
+            <div class="flex-1 flex justify-center">
+                <img class="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[700px] max-w-full" src="./img/me.png" alt="Profile">
+            </div>
+            <div class="flex flex-col text-center lg:text-left flex-1">
+                <h1 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[64px] font-bold">Yousif Sami</h1>
+                <h1 class="text-red text-lg sm:text-xl md:text-2xl lg:text-[40px] mt-2">Full-Stack Web Developer | Product Analyst</h1>
+                <p class="text-gray text-sm sm:text-base md:text-lg lg:text-[32px] lg:leading-[32px] mt-8 lg:mt-[109px] max-w-full lg:w-[560px]">Hey there! Thanks for stopping by.
+                    Take a look around and
+                    discover what I love to build and analyze.
+                </p>
+                <button class="red-button mt-8 lg:mt-[185px] w-[200px] sm:w-[250px] lg:w-[290px] h-[60px] sm:h-[80px] lg:h-[100px] text-lg sm:text-xl lg:text-[32px] mx-auto lg:mx-0" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">
+                    Show Me
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="about" class="section mt-[512px] pl-[128px] w-screen h-screen flex">
+        <div class="flex flex-col mt-[124px]">
+          <h1 class="text-red text-[96px] font-bold">Who am i?</h1>
+            <p class="text-white text-[32px]/[36px] w-[970px] mt-[40px]">I’m a Full-Stack Developer and Product Analyst with experience in web development, data analysis, 
+                and human-centered design. I thrive at the intersection of usability and data-driven insights constantly looking for structured,
+                 scalable ways to improve products and experiences.</p>
+
+        
+            <h1 class="text-red text-[36px] mt-[60px]">Education</h1>
+            <p class="text-white text-[24px]/[24px] w-[470px]">Bachelor’s in Computer Engineering <br> University of Technology, Iraq (2020–2024)</p>
+
+            <button class="red-button mt-[124px] w-[205px] h-[70px] text-[24px]">Download CV</button>
+        </div>
+        <div>
+            <img class="w-[1000px] opacity-[40%] top-20 right-30 relative" src="img/question-mark.png" alt="">
+        </div>
+    </div> -->
+    <div id="about" class="section fade-in-section mt-8 lg:mt-[256px] md:mt-8 px-4 sm:px-8 md:px-16 md:mb-[128px] lg:px-[128px]  w-screen min-h-screen flex items-center">
+        <div class="flex flex-col lg:flex-row items-center w-full space-y-8 lg:space-y-0">
+            <div class="flex flex-col text-center lg:text-left flex-1">
+                <h1 class="text-red text-4xl sm:text-5xl md:text-6xl lg:text-[96px] font-bold">Who am i?</h1>
+                <p class="text-white text-sm sm:text-base md:text-lg lg:text-[32px] lg:leading-[36px] max-w-full lg:w-[970px] mt-4 lg:mt-[40px]">I'm a Full-Stack Developer and Product Analyst with experience in web development, data analysis, 
+                    and human-centered design. I thrive at the intersection of usability and data-driven insights constantly looking for structured,
+                     scalable ways to improve products and experiences.</p>
+
+                <h1 class="text-red text-xl sm:text-2xl lg:text-[36px] mt-8 lg:mt-[60px]">Education</h1>
+                <p class="text-white text-base sm:text-lg lg:text-[24px] lg:leading-[24px] max-w-full lg:w-[470px]">Bachelor's in Computer Engineering <br> University of Technology, Iraq (2020–2024)</p>
+
+                <button class="red-button mt-8 lg:mt-[124px] w-[160px] sm:w-[180px] lg:w-[205px] h-[50px] sm:h-[60px] lg:h-[70px] text-base sm:text-lg lg:text-[24px] mx-auto lg:mx-0">Download CV</button>
+            </div>
+            <div class="">
+                <img class="fade-in-img z-[-1] w-[600px] top-[1000px] md:top-[1000px] lg:left-210 lg:top-[1200px]   md:right-0 md:left-50 absolute  right-0 sm:w-[600px] md:w-[600px] lg:w-[900px] opacity-10 lg:opacity-[40%] max-w-full" style="--img-final-opacity:0.1;" src="img/question-mark.png" alt="Question mark">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="flex justify-center mx-auto absolute top-[2500px] left-0 right-45">
+
+        <img class=" w-[722px] opacity-[42%]   z-[-1]" src="/img/future.png" alt="">
+    </div> -->
+
+    
+    <!-- <div id="skills" class="section mt-[512px] mb-[240px] h-screen pl-[128px] w-screen h-screen ">
+        <h1 class="text-red text-[96px] font-bold">Skill-Set</h1>
+        
+        <div class="flex justify-between space-x-[110px] mt-[45px] mr-[306px] ">
+            <div class="align-text-left cardbg w-[415px] h-[460px] flex flex-col items-center">
+                <img class="w-[151px] mt-[32px]" src="/img/web-development.png" alt="">
+                <h1 class="text-white text-center text-[30px] mt-[24px] font-bold">Full-Stack Development</h1>
+                <p class="text-gray mt-[15px] text-[24px]/[32px] ">Develop full-featured apps with scalable APIs and responsive, user-friendly front ends.</p>
+            </div>
+            <div class=" cardbg w-[415px] h-[460px] flex flex-col items-center">
+                <img class="w-[151px] mt-[32px]" src="/img/dashboard(1).png" alt="">
+                <h1 class="text-white text-center text-[30px] mt-[24px] w-full font-bold">Data Analysis </h1>
+                <p class="text-gray mt-[15px] text-[24px]/[32px] ">Turn raw data into actionable insights using SQL, spreadsheets, and tools like Tableau to support smarter business decisions.</p>
+            </div>
+            <div class="cardbg w-[415px] h-[460px] flex flex-col items-center">
+                <img class="w-[151px] mt-[32px]" src="/img/product-research.png" alt="">
+                <h1 class="text-white text-center text-[30px] mt-[24px] w-full font-bold">Product & User Analysis</h1>
+                <p class="text-gray mt-[15px] text-[24px]/[32px] ">Analyze user journeys, feature usage, and behavioral patterns to uncover insights that drive product improvements and better UX.</p>
+            </div>
+        </div>
+        <div class="flex justify-between cardbg2 h-[216px] mr-[306px] mt-[40px] px-[106px] pt-[44px]">
+            <div class="flex flex-col items-center">
+                <img class="w-[92px]" src="/img/python.png" alt="">
+                <h1 class="text-[24px] mt-[12px] font-bold text-gray">Python</h1>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-[92px]" src="/img/php.png" alt="">
+                <h1 class="text-[24px] mt-[12px] font-bold text-gray">Php</h1>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-[92px]" src="/img/sql-server.png" alt="">
+                <h1 class="text-[24px] mt-[12px] font-bold text-gray">MySQL Server</h1>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-[92px]" src="/img/document.png" alt="">
+                <h1 class="text-[24px] mt-[12px] font-bold text-gray">Vue.js</h1>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-[92px]" src="/img/social.png" alt="">
+                <h1 class="text-[24px] mt-[12px] font-bold text-gray">Git Control</h1>
+            </div>
+        </div>
+    </div> -->
+    
+    <!-- Skills Section -->
+    <div id="skills" class="section fade-in-section mt-8 lg:mt-[512px] mb-[512px] lg:mb-[240px] lg:pr-[256px] sm:px-8 md:px-16 lg:pl-[128px] w-screen min-h-screen">
+        <h1 class="text-red text-4xl sm:text-5xl md:text-6xl lg:text-[96px] font-bold text-center lg:text-left">Skill-Set</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-[110px] mt-6 lg:mt-[45px] ">
+            <div class="cardbg flex flex-col items-center p-4 sm:p-6">
+                <img class="w-[80px] sm:w-[120px] lg:w-[151px] mt-4 lg:mt-[32px]" src="/img/web-development.png" alt="">
+                <h1 class="text-white text-center text-lg sm:text-xl lg:text-[30px] mt-3 lg:mt-[24px] font-bold">Full-Stack Development</h1>
+                <p class="text-gray mt-2 lg:mt-[15px] text-sm sm:text-base lg:text-[24px] lg:leading-[32px] text-center">Develop full-featured apps with scalable APIs and responsive, user-friendly front ends.</p>
+            </div>
+            
+            <div class="cardbg flex flex-col items-center p-4 sm:p-6">
+                <img class="w-[80px] sm:w-[120px] lg:w-[151px] mt-4 lg:mt-[32px]" src="/img/dashboard(1).png" alt="">
+                <h1 class="text-white text-center text-lg sm:text-xl lg:text-[30px] mt-3 lg:mt-[24px] w-full font-bold">Data Analysis</h1>
+                <p class="text-gray mt-2 lg:mt-[15px] text-sm sm:text-base lg:text-[24px] lg:leading-[32px] text-center">Turn raw data into actionable insights using SQL, spreadsheets, and tools like Tableau to support smarter business decisions.</p>
+            </div>
+            
+            <div class="cardbg flex flex-col items-center p-4 sm:p-6 md:col-span-2 lg:col-span-1">
+                <img class="w-[80px] sm:w-[120px] lg:w-[151px] mt-4 lg:mt-[32px]" src="/img/product-research.png" alt="">
+                <h1 class="text-white text-center text-lg sm:text-xl lg:text-[30px] mt-3 lg:mt-[24px] w-full font-bold">Product & User Analysis</h1>
+                <p class="text-gray mt-2 lg:mt-[15px] text-sm sm:text-base lg:text-[24px] lg:leading-[32px] text-center">Analyze user journeys, feature usage, and behavioral patterns to uncover insights that drive product improvements and better UX.</p>
+            </div>
+        </div>
+        
+        <div class="cardbg2 h-auto lg:h-[216px]  mt-6 lg:mt-[40px] p-4 sm:p-6 lg:px-[106px] lg:pt-[44px]">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
+                <div class="flex flex-col items-center">
+                    <img class="w-[60px] sm:w-[80px] lg:w-[92px]" src="/img/python.png" alt="">
+                    <h1 class="text-sm sm:text-base lg:text-[24px] mt-2 lg:mt-[12px] font-bold text-gray text-center">Python</h1>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img class="w-[60px] sm:w-[80px] lg:w-[92px]" src="/img/php.png" alt="">
+                    <h1 class="text-sm sm:text-base lg:text-[24px] mt-2 lg:mt-[12px] font-bold text-gray text-center">Php</h1>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img class="w-[60px] sm:w-[80px] lg:w-[92px]" src="/img/sql-server.png" alt="">
+                    <h1 class="text-sm sm:text-base lg:text-[24px] mt-2 lg:mt-[12px] font-bold text-gray text-center">MySQL Server</h1>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img class="w-[60px] sm:w-[80px] lg:w-[92px]" src="/img/document.png" alt="">
+                    <h1 class="text-sm sm:text-base lg:text-[24px] mt-2 lg:mt-[12px] font-bold text-gray text-center">Vue.js</h1>
+                </div>
+                <div class="flex flex-col items-center col-span-2 sm:col-span-1">
+                    <img class="w-[60px] sm:w-[80px] lg:w-[92px]" src="/img/social.png" alt="">
+                    <h1 class="text-sm sm:text-base lg:text-[24px] mt-2 lg:mt-[12px] font-bold text-gray text-center">Git Control</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Background decoration -->
+        <div class="flex justify-center mx-auto absolute top-[1700px] sm:top-[1700px] md:top-[1800px] lg:top-[2230px] left-0 right-0 pointer-events-none">
+            <img class="fade-in-img w-[300px] sm:w-[300px] lg:w-[722px] z-[-1]" style="--img-final-opacity:0.42;" src="/img/future.png" alt="">
+        </div>
+    </div>
+    
+    <!-- <div class="flex justify-center mx-auto absolute top-[3950px] left-100 right-45">
+
+        <img style="transform: scaleX(-1);" class=" w-[512px] opacity-[42%]   z-[-1]" src="/img/rocket(1).png" alt="">
+    </div> -->
+
+    <!-- <div id="projects">
+        <h1 class="text-red font-bold text-[96px] pl-[128px] mt-[256px]">Projects</h1>
+        <div class="flex justify-between mt-[64px] pl-[128px] pr-[306px] space-x-[54px]">
+            <div class="cardbg2 flex text-left flex-col items-center w-[455px] h-[668px] p-[24px]">
+                <img class="w-[380px]" src="/img/image 3.png" alt="">
+                <h1 class="mt-[28px] w-full text-white font-bold text-[32px]">Freshwater Fish Store</h1>
+                <p class="mt-[28px] w-full text-white text-[24px]">A full-featured e-commerce site for freshwater pet lovers</p>
+                <p class="mt-[28px] w-full text-gray text-[24px]">Laravel, Vue.js, TailwindCSS, MySQL</p>
+            </div>
+            <div class="cardbg2 flex text-left flex-col items-center w-[455px] h-[668px] p-[24px]">
+                <img class="w-[380px]" src="/img/image 3.png" alt="">
+                <h1 class="mt-[28px] w-full text-white font-bold text-[32px]">QR Code Auth Blogging</h1>
+                <p class="mt-[28px] w-full text-white text-[24px]">A secure blogging platform with QR-based two-factor authentication</p>
+                <p class="mt-[28px] w-full text-gray text-[24px]">Django, Bootstrap, Google Authenticator Integration, SQLite</p>
+            </div>
+            <div class="cardbg2 flex text-left flex-col items-center w-[455px] h-[668px] p-[20px]">
+                <img class="w-[380px]" src="/img/image 3.png" alt="">
+                <h1 class="mt-[28px] w-full text-white font-bold text-[32px]">BNPL Business Dashboard</h1>
+                <p class="mt-[28px] w-full text-white text-[24px]">An internal dashboard for analyzing user behavior & product performance</p>
+                <p class="mt-[28px] w-full text-gray text-[24px]">SQL, Tableau, Spreadsheets</p>
+            </div>
+            
+        </div>
+        
+    </div> -->
+    
+    <!-- Projects Section -->
+    <div id="projects" class="px-4 fade-in-section sm:px-8 md:px-16 lg:pl-[128px] lg:pr-[256px] ">
+        <h1 class="text-red font-bold text-4xl sm:text-5xl md:text-6xl lg:text-[96px] mt-[128px] lg:mt-[256px] text-center lg:text-left">Projects</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-[54px] mt-8 lg:mt-[64px] ">
+            <div class="cardbg2 flex text-left flex-col items-center p-4 sm:p-6 lg:p-[24px]">
+                <img class="w-full max-w-[380px]" src="/img/image 3.png" alt="">
+                <h1 class="mt-4 lg:mt-[28px] w-full text-white font-bold text-lg sm:text-xl lg:text-[32px]">Freshwater Fish Store</h1>
+                <p class="mt-3 lg:mt-[28px] w-full text-white text-sm sm:text-base lg:text-[24px]">A full-featured e-commerce site for freshwater pet lovers</p>
+                <p class="mt-3 lg:mt-[28px] w-full text-gray text-sm sm:text-base lg:text-[24px]">Laravel, Vue.js, TailwindCSS, MySQL</p>
+            </div>
+            
+            <div class="cardbg2 flex text-left flex-col items-center p-4 sm:p-6 lg:p-[24px]">
+                <img class="w-full max-w-[380px]" src="/img/image 3.png" alt="">
+                <h1 class="mt-4 lg:mt-[28px] w-full text-white font-bold text-lg sm:text-xl lg:text-[32px]">QR Code Auth Blogging</h1>
+                <p class="mt-3 lg:mt-[28px] w-full text-white text-sm sm:text-base lg:text-[24px]">A secure blogging platform with QR-based two-factor authentication</p>
+                <p class="mt-3 lg:mt-[28px] w-full text-gray text-sm sm:text-base lg:text-[24px]">Django, Bootstrap, Google Authenticator Integration, SQLite</p>
+            </div>
+            
+            <div class="cardbg2 flex text-left flex-col items-center p-4 sm:p-6 lg:p-[20px] md:col-span-2 lg:col-span-1">
+                <img class="w-full max-w-[380px]" src="/img/image 3.png" alt="">
+                <h1 class="mt-4 lg:mt-[28px] w-full text-white font-bold text-lg sm:text-xl lg:text-[32px]">BNPL Business Dashboard</h1>
+                <p class="mt-3 lg:mt-[28px] w-full text-white text-sm sm:text-base lg:text-[24px]">An internal dashboard for analyzing user behavior & product performance</p>
+                <p class="mt-3 lg:mt-[28px] w-full text-gray text-sm sm:text-base lg:text-[24px]">SQL, Tableau, Spreadsheets</p>
+            </div>
+        </div>
+        <!-- Background decoration -->
+    <div class="flex justify-center mx-auto absolute left-0  top-[3000px] sm:top-[3000px] lg:right-0 lg:top-[3650px] sm:left-0  pointer-events-none">
+        <img style="transform: scaleX(-1);--img-final-opacity:0.42;" class="fade-in-img w-[300px] sm:w-[300px] lg:w-[512px] z-[-1] "  src="/img/rocket(1).png" alt="">
+    </div>
+    </div>
+    <!-- <div id="exp" class="pl-[128px] pb-[200px] mr-[306px]">
+        <h1 class="text-red font-bold text-[96px]  mt-[256px]">Expierence</h1>
+        <div class="flex justify-between space-x-[118px] ">
+            
+            <div class="flex flex-col ">
+                <div class="cardbg2 w-[512px] h-[88px] mt-[16px] flex justify-center">
+                    <p class="text-white text-[48px]">2021</p>
+                </div>
+                <div class="h-[150px] border-l-8 border-red border-dashed mx-auto"></div>
+                <div class="cardbg2 w-[512px]  h-[88px] flex justify-center">
+                    <p class="text-white text-[48px]">2022</p>
+                </div>
+                <div class="h-[170px] border-l-8 border-red border-dashed mx-auto"></div>
+                <div class="cardbg2 w-[512px] h-[88px] flex justify-center">
+                    <p class="text-white text-[48px]">2025</p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full items-center">
+                <div class="cardbg2 p-[24px] w-full h-[220px] mt-[16px] flex-col flex items-left">
+                    <p class="text-white text-[32px]">Urhay Elementary Private School — IT Technician, 
+                        Teacher, Principal’s Assistant</p>
+                    <p >
+                        <li class="ml-[38px]">
+                        
+                                <p class="text-gray text-[24px]/[32px]">Provided IT and classroom support</p>
+                           
+                        </li>
+                        <li class="ml-[38px]">
+
+                            <p class="text-gray text-[24px]/[32px]">Maintained school systems and created educational content</p>
+                        </li >   
+                           
+                    </p>
+                </div>
+                    <div class="cardbg2 p-[24px] w-full h-[240px] mt-[16px] flex-col flex items-left">
+                    <p class="text-white text-[32px]">Makers baghdad - Front-end development </p>
+                    <p >
+                        <li class="ml-[38px]">
+                        
+                                <p class="text-gray text-[24px]/[32px]">Contributed to the development of user-facing components using Vue.js and Tailwind CSS.</p>
+                           
+                        </li>
+                        <li class="ml-[38px]">
+
+                            <p class="text-gray text-[24px]/[32px]">Improved performance and usability across multiple views by implementing efficient state management and reusable Vue components.</p>
+                        </li >   
+                           
+                    </p>
+                  </div>
+                        <div class="cardbg2 py-[16px] p-[24px] w-full h-[280px] mt-[16px] flex-col flex items-left">
+                    <p class="text-white text-[32px]">Makers Baghdad — Laravel Full Stack Intern </p>
+                    <p >
+                        <li class="ml-[38px]">
+                        
+                                <p class="text-gray text-[24px]/[32px]">Built backend services and APIs with Laravel</p>
+                           
+                        </li>
+                        <li class="ml-[38px]">
+
+                            <p class="text-gray text-[24px]/[32px]">Contributed to full-stack features using Vue.js and Tailwind</p>
+                        </li >   
+                           
+                    </p>
+                    <p class="text-white text-[32px]">Tamata / Tamata BNPL — Product Analyst  </p>
+                    <p >
+                        <li class="ml-[38px]">
+                        
+                                <p class="text-gray text-[24px]/[32px]">Analyzed user behavior and product usage across BNPL features</p>
+                           
+                        </li>
+                        <li class="ml-[38px]">
+
+                            <p class="text-gray text-[24px]/[32px]">Translated insights into UX and feature improvements</p>
+                        </li >   
+                             <li class="ml-[38px]">
+
+                            <p class="text-gray text-[24px]/[32px]">Used SQL, Tableau, and custom dashboardss</p>
+                        </li >   
+                    </p>
+                  </div>
+            </div>
+        </div>
+    <div class="flex justify-left mx-auto absolute top-[5800px] left-1 right-0">
+
+        <img class=" w-[760px] opacity-[42%]   z-[-1]" src="/img/briefcase.png" alt="">
+    </div>
+</div>
+<div id="footer" class="footer px-[348px] py-[60px] ">
+        <div class="flex justify-between space-x-[400px]">   
+            <div class="w-full flex flex-col items-left justify-between">
+                <h1 class="text-[24px] text-white">Contact</h1>
+                <p class="mt-[12px] text-[24px] text-gray">Phone: +964 780 541 5349</p>
+                <p class="text-[24px] text-gray">Email: yousifalchamany03@gmail.com</p>
+            </div>
+           
+                <div class="w-full flex flex-col items-right space-y-[12px]">
+                     <h1 class="text-left text-[24px] text-white">Social Media</h1>
+                    <div class="flex justify-left space-x-[22px]">
+                        <a href=""><img class="w-[48px]" src="/img/instagram.png" alt=""></a>
+                        <a href=""><img class="w-[48px]" src="/img/linkedin.png" alt=""></a>
+                        <a href=""><img class="w-[48px]" src="/img/github.png" alt=""></a>
+                        
+                    </div>
+                    <h1 class="text-left text-gray text-[24px]"> Copyright © 2025 Yousif Sami</h1>                    
+                </div>
+        </div>
+      
+
+</div> -->
+  <!-- Experience Section - Made Responsive -->
+    <div id="exp" class="px-4 fade-in-section sm:px-8 md:px-16 lg:pl-[128px] pb-[100px] sm:pb-[150px] lg:pb-[200px] lg:mr-[256px] lg:pr-0">
+       <h1 class="text-red font-bold text-4xl sm:text-5xl md:text-6xl lg:text-[96px] mt-[128px] lg:mt-[256px] text-center lg:text-left">Experience</h1>
+       
+       <!-- Mobile Timeline -->
+       <div class="block lg:hidden mt-8">
+           <div class="space-y-8">
+               <!-- 2021 Experience -->
+               <div class="relative">
+                   <div class="cardbg2 w-full p-4 mb-4 flex justify-center">
+                       <p class="text-white text-2xl sm:text-3xl font-bold">2021</p>
+                   </div>
+                   <div class="cardbg2 p-4 sm:p-6 w-full">
+                       <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-3">Urhay Elementary Private School — IT Technician, Teacher, Principal's Assistant</h3>
+                       <ul class="space-y-2">
+                           <li class="text-gray text-sm sm:text-base md:text-lg flex">
+                               <span class="mr-3">•</span>
+                               <span>Provided IT and classroom support</span>
+                           </li>
+                           <li class="text-gray text-sm sm:text-base md:text-lg flex">
+                               <span class="mr-3">•</span>
+                               <span>Maintained school systems and created educational content</span>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+               <!-- 2022 Experience -->
+               <div class="relative">
+                   <div class="cardbg2 w-full p-4 mb-4 flex justify-center">
+                       <p class="text-white text-2xl sm:text-3xl font-bold">2022</p>
+                   </div>
+                   <div class="cardbg2 p-4 sm:p-6 w-full">
+                       <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-3">Makers Baghdad - Front-end Development</h3>
+                       <ul class="space-y-2">
+                           <li class="text-gray text-sm sm:text-base md:text-lg flex">
+                               <span class="mr-3">•</span>
+                               <span>Contributed to the development of user-facing components using Vue.js and Tailwind CSS</span>
+                           </li>
+                           <li class="text-gray text-sm sm:text-base md:text-lg flex">
+                               <span class="mr-3">•</span>
+                               <span>Improved performance and usability across multiple views by implementing efficient state management and reusable Vue components</span>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+               <!-- 2025 Experience -->
+               <div class="relative">
+                   <div class="cardbg2 w-full p-4 mb-4 flex justify-center">
+                       <p class="text-white text-2xl sm:text-3xl font-bold">2025</p>
+                   </div>
+                   <div class="cardbg2 p-4 sm:p-6 w-full">
+                       <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-3">Makers Baghdad — Laravel Full Stack Intern</h3>
+                       <ul class="space-y-2 mb-6">
+                           <li class="text-gray text-sm sm:text-base md:text-lg flex">
+                               <span class="mr-3">•</span>
+                               <span>Built backend services and APIs with Laravel</span>
+                           </li>
+                           <li class="text-gray text-sm sm:text-base md:text-lg flex">
+                               <span class="mr-3">•</span>
+                               <span>Contributed to full-stack features using Vue.js and Tailwind</span>
+                           </li>
+                       </ul>
+                       
+                       <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-3">Tamata / Tamata BNPL — Product Analyst</h3>
+                       <ul class="space-y-2">
+                           <li class="text-gray text-sm sm:text-base md:text-lg flex">
+                               <span class="mr-3">•</span>
+                               <span>Analyzed user behavior and product usage across BNPL features</span>
+                           </li>
+                           <li class="text-gray text-sm sm:text-base md:text-lg flex">
+                               <span class="mr-3">•</span>
+                               <span>Translated insights into UX and feature improvements</span>
+                           </li>
+                           <li class="text-gray text-sm sm:text-base md:text-lg flex">
+                               <span class="mr-3">•</span>
+                               <span>Used SQL, Tableau, and custom dashboards</span>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <!-- Desktop Timeline -->
+       <div class="hidden lg:flex justify-between space-x-[118px] mt-[64px]">
+           <div class="flex flex-col">
+               <div class="cardbg2 w-[512px] h-[88px] mt-[16px] flex justify-center">
+                   <p class="text-white text-[48px]">2021</p>
+                </div>
+                  <div class="h-[150px] border-l-8 border-red border-dashed mx-auto"></div>
+                <div class="cardbg2 w-[512px] h-[88px] flex justify-center">
+                    <p class="text-white text-[48px]">2022</p>
+                </div>
+                  <div class="h-[170px] border-l-8 border-red border-dashed mx-auto"></div>
+                <div class="cardbg2 w-[512px] h-[88px] flex justify-center">
+                    <p class="text-white text-[48px]">2025</p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full items-center">
+                <div class="cardbg2 p-[24px] w-full h-[220px] mt-[16px] flex-col flex items-left">
+                    <p class="text-white text-[32px]">Urhay Elementary Private School — IT Technician, 
+                        Teacher, Principal's Assistant</p>
+                    <p>
+                        <li class="ml-[38px]">
+                                <p class="text-gray text-[24px]/[32px]">Provided IT and classroom support</p>
+                        </li>
+                        <li class="ml-[38px]">
+                            <p class="text-gray text-[24px]/[32px]">Maintained school systems and created educational content</p>
+                        </li>   
+                    </p>
+                </div>
+                <div class="cardbg2 p-[24px] w-full h-[240px] mt-[16px] flex-col flex items-left">
+                    <p class="text-white text-[32px]">Makers Baghdad - Front-end Development</p>
+                    <p>
+                        <li class="ml-[38px]">
+                                <p class="text-gray text-[24px]/[32px]">Contributed to the development of user-facing components using Vue.js and Tailwind CSS.</p>
+                        </li>
+                        <li class="ml-[38px]">
+                            <p class="text-gray text-[24px]/[32px]">Improved performance and usability across multiple views by implementing efficient state management and reusable Vue components.</p>
+                        </li>   
+                    </p>
+                  </div>
+                <div class="cardbg2 py-[16px] p-[24px] w-full h-[340px] mt-[16px] flex-col flex items-left">
+                    <p class="text-white text-[32px]">Makers Baghdad — Laravel Full Stack Intern</p>
+                    <p>
+                        <li class="ml-[38px]">
+                                <p class="text-gray text-[24px]/[32px]">Built backend services and APIs with Laravel</p>
+                        </li>
+                        <li class="ml-[38px]">
+                            <p class="text-gray text-[24px]/[32px]">Contributed to full-stack features using Vue.js and Tailwind</p>
+                        </li>   
+                    </p>
+                    <p class="text-white text-[32px] mt-8">Tamata / Tamata BNPL — Product Analyst</p>
+                    <p>
+                        <li class="ml-[38px]">
+                                <p class="text-gray text-[24px]/[32px]">Analyzed user behavior and product usage across BNPL features</p>
+                        </li>
+                        <li class="ml-[38px]">
+                            <p class="text-gray text-[24px]/[32px]">Translated insights into UX and feature improvements</p>
+                        </li>   
+                        <li class="ml-[38px]">
+                            <p class="text-gray text-[24px]/[32px]">Used SQL, Tableau, and custom dashboards</p>
+                        </li>   
+                    </p>
+                  </div>
+            </div>
+        </div>
+
+        <!-- Background Image - Made Responsive -->
+        <div class="flex justify-left mx-auto absolute  lg:top-[5400px]  left-1 right-0 pointer-events-none">
+            <img class="fade-in-img w-[300px] sm:w-[500px] lg:w-[760px] z-[-1]" style="--img-final-opacity:0.42;" src="/img/briefcase.png" alt="">
+        </div>
+    </div>
+
+    <!-- Footer - Made Responsive -->
+    <div id="footer" class="footer px-4 sm:px-8 md:px-16 lg:px-[348px] py-8 sm:py-12 lg:py-[60px]">
+        <div class="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-[400px]">   
+            <div class="w-full flex flex-col items-center lg:items-left text-center lg:text-left">
+                <h1 class="text-lg sm:text-xl lg:text-[24px] text-white font-bold">Contact</h1>
+                <p class="mt-2 lg:mt-[12px] text-base sm:text-lg lg:text-[24px] text-gray">Phone: +964 780 541 5349</p>
+                <p class="text-base sm:text-lg lg:text-[24px] text-gray">Email: yousifalchamany03@gmail.com</p>
+            </div>
+           
+            <div class="w-full flex flex-col items-center lg:items-right text-center lg:text-left space-y-3 lg:space-y-[12px]">
+                <h1 class="text-lg sm:text-xl lg:text-[24px] text-white font-bold">Social Media</h1>
+                <div class="flex justify-center lg:justify-left space-x-4 lg:space-x-[22px]">
+                    <a href=""><img class="w-[40px] sm:w-[44px] lg:w-[48px]" src="/img/instagram.png" alt="Instagram"></a>
+                    <a href=""><img class="w-[40px] sm:w-[44px] lg:w-[48px]" src="/img/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/Gbatt1"><img class="w-[40px] sm:w-[44px] lg:w-[48px]" src="/img/github.png" alt="GitHub"></a>
+                </div>
+                <h1 class=" text-sm sm:text-base lg:text-[24px] text-gray">Copyright © 2025 Yousif Sami</h1>                    
+            </div>
+        </div>
+    </div>
+
+</body> 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('div[id]');
+        const navLinks = document.querySelectorAll('.nav_item');
+
+        function onScroll(){
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link=> {
+                link.classList.remove('active')
+                if(link.dataset.section === current){
+                    link.classList.add('active');
+                }
+            })
+        };
+        window.addEventListener('scroll', onScroll); 
+               window.addEventListener('scroll', onScroll); 
+
+        navLinks.forEach(link =>{
+            link.addEventListener('click', function() {
+                const sectionId = this.getAttribute('data-section');
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        })
+     // Fade-in for sections
+    const fadeSections = document.querySelectorAll('.fade-in-section');
+    const fadeObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // observer.unobserve(entry.target); // Uncomment for one-time animation
+            }
+        });
+    }, { threshold: 0.15 });
+
+    fadeSections.forEach(section => {
+        fadeObserver.observe(section);
+    });
+
+    // Fade-in for images with custom opacity
+    const fadeImgs = document.querySelectorAll('.fade-in-img');
+    const imgObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    fadeImgs.forEach(img => {
+        imgObserver.observe(img);
+    });
+
+
+        const nav = document.getElementById('sidebar-nav');
+        const footer = document.getElementById('footer');
+    
+        function stickNavAboveFooter() {
+            if (!nav || !footer) return;
+            const navHeight = nav.offsetHeight;
+            const footerRect = footer.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+    
+           
+            if (footerRect.top < navHeight +120 ) {
+                // Move the nav up so it sits above the footer
+                nav.style.top = (windowHeight - footerRect.top - 70) * -1 + 'px';
+            } else {
+                // Normal fixed position
+                nav.style.top = '70px'; // or your preferred offset
+            }
+        }
+    
+        window.addEventListener('scroll', stickNavAboveFooter);
+        window.addEventListener('resize', stickNavAboveFooter);
+        stickNavAboveFooter();
+
+        navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const sectionId = this.getAttribute('data-section');
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+        });
+
+
+   
+</script>
+</html>
