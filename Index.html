@@ -32,7 +32,31 @@
         <div data-section="exp" class="cursor-pointer bord nav_item rounded-full w-[48px] h-[48px] md:w-[70px] md:h-[70px] flex items-center justify-center">
             <p class="text-[10px] md:text-[11px] font-bold">Expierence</p>
         </div>
+        
     </nav>
+                            <!-- Mobile Sticky Navbar -->
+                    <nav id="mobile-nav" class="fixed top-0 left-0 right-0 z-50 bg-[#2B2D41] flex justify-around items-center py-6 shadow-lg lg:hidden">
+                        <button data-section="home" style="border: none;" class="nav_item flex flex-col items-center text-white focus:outline-none">
+                    
+                            <span class="text-s">Home</span>
+                        </button>
+                        <button data-section="about" style="border: none;" class="nav_item flex flex-col items-center text-white focus:outline-none">
+                           
+                            <span class="text-s">About</span>
+                        </button>
+                        <button data-section="skills" style="border: none;" class="nav_item flex flex-col items-center text-white focus:outline-none">
+                            
+                            <span class="text-s">Skills</span>
+                        </button>
+                        <button data-section="projects" style="border: none;" class="nav_item flex flex-col items-center text-white focus:outline-none">
+                          
+                            <span class="text-s">Projects</span>
+                        </button>
+                        <button data-section="exp" style="border: none;" class="nav_item flex flex-col items-center text-white focus:outline-none">
+                          
+                            <span class="text-s">Exp</span>
+                        </button>
+                    </nav>
     <!-- <div id="home" class="section  px-[128px] w-screen h-screen flex">
         <div class="mt-[140px] flex">
 
@@ -52,9 +76,9 @@
             </div>
         </div>
     </div> -->
-     <div id="home" class="section fade-in-section px-4 sm:px-8 md:px-16 lg:pl-[128px] lg:pr-[256px] w-screen min-h-screen flex items-center">
+     <div id="home" class="mt-16 section fade-in-section px-4 sm:px-8 md:px-16 lg:pl-[128px] lg:pr-[256px] w-screen min-h-screen flex items-center">
         <div class="flex flex-col lg:flex-row items-center w-full space-y-8 lg:space-y-0">
-            <div class="flex-1 flex justify-center">
+            <div class="lg:hidden flex-1 flex justify-center">
                 <img class="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[700px] max-w-full" src="./img/me.png" alt="Profile">
             </div>
             <div class="flex flex-col text-center lg:text-left flex-1">
@@ -67,6 +91,9 @@
                 <button class="red-button mt-8 lg:mt-[185px] w-[200px] sm:w-[250px] lg:w-[290px] h-[60px] sm:h-[80px] lg:h-[100px] text-lg sm:text-xl lg:text-[32px] mx-auto lg:mx-0" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">
                     Show Me
                 </button>
+            </div>
+             <div class="hidden lg:flex flex-1 flex justify-center">
+                <img class="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[700px] max-w-full" src="./img/me.png" alt="Profile">
             </div>
         </div>
     </div>
@@ -245,14 +272,14 @@
         <h1 class="text-red font-bold text-4xl sm:text-5xl md:text-6xl lg:text-[96px] mt-[128px] lg:mt-[256px] text-center lg:text-left">Projects</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-[54px] mt-8 lg:mt-[64px] ">
             <div class="cardbg2 flex text-left flex-col items-center p-4 sm:p-6 lg:p-[24px]">
-                <img class="w-full max-w-[380px]" src="/img/image 3.png" alt="">
+                <img class="w-full w-[380px] h-[310px]" src="/img/image 5.png" alt="">
                 <h1 class="mt-4 lg:mt-[28px] w-full text-white font-bold text-lg sm:text-xl lg:text-[32px]">Freshwater Fish Store</h1>
                 <p class="mt-3 lg:mt-[28px] w-full text-white text-sm sm:text-base lg:text-[24px]">A full-featured e-commerce site for freshwater pet lovers</p>
                 <p class="mt-3 lg:mt-[28px] w-full text-gray text-sm sm:text-base lg:text-[24px]">Laravel, Vue.js, TailwindCSS, MySQL</p>
             </div>
             
             <div class="cardbg2 flex text-left flex-col items-center p-4 sm:p-6 lg:p-[24px]">
-                <img class="w-full max-w-[380px]" src="/img/image 3.png" alt="">
+                <img class="w-full w-[380px] h-[310px]" src="/img/image 4.png" alt="">
                 <h1 class="mt-4 lg:mt-[28px] w-full text-white font-bold text-lg sm:text-xl lg:text-[32px]">QR Code Auth Blogging</h1>
                 <p class="mt-3 lg:mt-[28px] w-full text-white text-sm sm:text-base lg:text-[24px]">A secure blogging platform with QR-based two-factor authentication</p>
                 <p class="mt-3 lg:mt-[28px] w-full text-gray text-sm sm:text-base lg:text-[24px]">Django, Bootstrap, Google Authenticator Integration, SQLite</p>
@@ -482,6 +509,7 @@
             <div class="flex flex-col w-full items-center">
                 <div class="cardbg2 p-[24px] w-full h-[220px] mt-[16px] flex-col flex items-left">
                     <p class="text-white text-[32px]">Urhay Elementary Private School — IT Technician, 
+
                         Teacher, Principal's Assistant</p>
                     <p>
                         <li class="ml-[38px]">
@@ -547,8 +575,8 @@
             <div class="w-full flex flex-col items-center lg:items-right text-center lg:text-left space-y-3 lg:space-y-[12px]">
                 <h1 class="text-lg sm:text-xl lg:text-[24px] text-white font-bold">Social Media</h1>
                 <div class="flex justify-center lg:justify-left space-x-4 lg:space-x-[22px]">
-                    <a href=""><img class="w-[40px] sm:w-[44px] lg:w-[48px]" src="/img/instagram.png" alt="Instagram"></a>
-                    <a href=""><img class="w-[40px] sm:w-[44px] lg:w-[48px]" src="/img/linkedin.png" alt="LinkedIn"></a>
+                    <!-- <a href=""><img class="w-[40px] sm:w-[44px] lg:w-[48px]" src="/img/instagram.png" alt="Instagram"></a> -->
+                    <a href="https://www.linkedin.com/in/yousif-sami-4aa15131b/"><img class="w-[40px] sm:w-[44px] lg:w-[48px]" src="/img/linkedin.png" alt="LinkedIn"></a>
                     <a href="https://github.com/Gbatt1"><img class="w-[40px] sm:w-[44px] lg:w-[48px]" src="/img/github.png" alt="GitHub"></a>
                 </div>
                 <h1 class=" text-sm sm:text-base lg:text-[24px] text-gray">Copyright © 2025 Yousif Sami</h1>                    
